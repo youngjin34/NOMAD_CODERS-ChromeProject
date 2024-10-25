@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Final Project</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <span id="wantChange"><b>Do you wanna change the background??</b></span>
-  <form id="background-change">
-    <button>Click me!</button>
-  </form>
-  <h1 id="clock" class="text"></h1>
-  <form id="login-form" class="hidden">
-    <input 
-    class="text"
-    required
-    maxlength="15"
-    type="text" 
-    placeholder="What is your name?">
-    <input type="submit" value="Log In">
-  </form>
-  <h1 id="greeting" class="hidden"></h1>
-  <form id="todo-form">
-    <input type="text" class="text" placeholder="Write a To Do and Press Enter" required >
-  </form>
-    <ul id="todo-list">
-    </ul>
-    <div id="weather">
-      <div></div>
-      <div></div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="clock" class="text"></h1>
+      <form id="login-form" class="hidden">
+        <input
+          class="text"
+          maxlength="15"
+          type="text"
+          placeholder="너의 이름은?"
+          required
+        />
+        <input class="btn" type="submit" value="Log In" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input type="text" class="text" placeholder="오늘 할 일" required />
+        <button class="btn" type="submit">할 일 추가</button>
+      </form>
+      <ul id="todo-list"></ul>
     </div>
-  <script src="login.js"></script>
-  <script src="clock.js"></script>
-  <script src="image.js"></script>
-  <script src="todo.js"></script>
-  <script src="weather.js"></script>
-</body>
+    <div class="change-img">
+      <span id="wantChange"><b>이미지 바꿔볼까?!</b></span>
+      <form id="background-change">
+        <button>Click me!</button>
+      </form>
+    </div>
+    <!-- <div id="weather">
+      <div></div>
+      <div></div>
+    </div> -->
+    <script src="login.js"></script>
+    <script src="clock.js"></script>
+    <script src="image.js"></script>
+    <script src="todo.js"></script>
+    <!-- <script src="weather.js"></script> -->
+  </body>
 </html>
