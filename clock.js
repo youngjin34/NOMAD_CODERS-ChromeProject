@@ -29,9 +29,8 @@ function getClock() {
   const hour = String(date.getHours()).padStart(2, "0");
   const minute = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
-  clock.innerText = `
-  오늘은 ${month}월 ${day}일입니다.
-  ${hour}:${minute}:${seconds}`;
+  clock.innerText = `오늘은 ${month}월 ${day}일입니다.
+                    ${hour}:${minute}:${seconds}`;
 }
 
 function changeTextColor() {

@@ -2,10 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Final Project</title>
+    <title>First Project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="change-img">
+      <span id="wantChange"><b>이미지 바꿔볼까?!</b></span>
+      <form id="background-change">
+        <button>Click me!</button>
+      </form>
+    </div>
+
     <div class="container">
       <h1 id="clock" class="text"></h1>
       <form id="login-form" class="hidden">
@@ -15,6 +22,7 @@
           type="text"
           placeholder="너의 이름은?"
           required
+          autofocus
         />
         <input class="btn" type="submit" value="Log In" />
       </form>
@@ -25,20 +33,14 @@
       </form>
       <ul id="todo-list"></ul>
     </div>
-    <div class="change-img">
-      <span id="wantChange"><b>이미지 바꿔볼까?!</b></span>
-      <form id="background-change">
-        <button>Click me!</button>
-      </form>
+    <div class="mode-change">
+      <input type="button" id="change" value="night" />
     </div>
-    <!-- <div id="weather">
-      <div></div>
-      <div></div>
-    </div> -->
+
     <script src="login.js"></script>
     <script src="clock.js"></script>
     <script src="image.js"></script>
     <script src="todo.js"></script>
-    <!-- <script src="weather.js"></script> -->
+    <script src="darkmode.js"></script>
   </body>
 </html>

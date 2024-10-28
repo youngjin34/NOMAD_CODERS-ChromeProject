@@ -29,9 +29,11 @@ body {
 
 img {
   width: 500px;
+  height: 400px;
   position: absolute;
   left: 30px;
   top: 200px;
+  border-radius: 20px;
 }
 
 #clock {
@@ -41,16 +43,30 @@ img {
 
 #login-form {
   margin-bottom: 20px;
+  position: absolute;
+  top: 200px;
+}
+
+#greeting {
+  position: absolute;
+  top: 160px;
 }
 
 #login-form input:first-child {
   font-size: 18px;
+  padding: 5px;
   width: 150px;
   border: none;
   border-bottom: 1px solid black;
 }
 
+#todo-form {
+  position: absolute;
+  top: 250px;
+}
+
 #todo-form input {
+  padding: 5px;
   font-size: 18px;
   border: none;
   border-bottom: 1px solid black;
@@ -62,6 +78,19 @@ img {
   font-size: 16px;
 }
 
+#todo-list {
+  position: absolute;
+  top: 280px;
+  left: 150px;
+  max-height: 200px;
+  max-width: 250px;
+  overflow-y: scroll;
+}
+
+#todo-list::-webkit-scrollbar {
+  display: none;
+}
+
 #todo-list > li {
   margin-bottom: 10px;
 }
@@ -70,4 +99,20 @@ img {
   margin-left: 10px;
   border: none;
   background: none;
+}
+
+.mode-change {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.day {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.night {
+  background-color: black;
+  color: white;
 }
